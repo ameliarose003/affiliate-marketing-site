@@ -1,0 +1,123 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    margin: 0;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.25);
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(253, 252, 251);
+    z-index: 2;
+    position: relative;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: font-weight 0.5s ease-in;
+    transform-origin: left;
+}
+
+header li a:hover {
+    font-weight:600;
+}
+
+header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-out;
+}
+
+header a:hover::after {
+    transform: scaleX(1);
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header input {
+    border-radius: 8px;
+    /* height: 20px; */
+    border: 1px solid #383225;
+    padding: 3px;
+    padding-left: 10px;
+}
+
+#search-btn {
+    border-radius: 8px;
+    /* height: 24px; */
+    border: 1px solid #383225;
+    background-color: #5c4e2f;
+    color: whitesmoke;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 1000px;
+    max-width: 1200px;
+    background-color: rgb(255, 252, 250);
+    z-index: 1;
+    box-shadow: 0px 0px 6px 6px rgba(51, 51, 51, 0.2);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.home-intro {
+    justify-items: center;
+}
+
+.home-intro h2 {
+    font-size: 50px;
+}
+
+footer {
+    background-color: rgb(255, 252, 250);
+    /* margin-top: 30px; */
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(51, 51, 51, 0.2);
+
+}
